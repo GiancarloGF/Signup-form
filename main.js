@@ -80,6 +80,7 @@ inputs.forEach((input)=>{
 // Agregamos un evento al boton enviar para validar los campos e informacion.
 form.addEventListener('submit' ,(e)=>{
       
+      e.preventDefault();//Prevenir que el formulario se envie sin ningun dato.(Aprender+)
       
       if(camposValidos['first-name'] && camposValidos['last-name'] && camposValidos['password'] &&camposValidos['email']){//Si todos los campos son validos
             form.reset();
@@ -94,7 +95,6 @@ form.addEventListener('submit' ,(e)=>{
             
             
       }else{
-            e.preventDefault();//Prevenir que el formulario se envie sin ningun dato.(Aprender+)
             document.querySelectorAll('.paraf__error').classList.add('paraf__error--active');
       }
 })
