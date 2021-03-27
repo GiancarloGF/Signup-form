@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Giancarlo | Intro component with sign up form</title>
+</head>
+
+
+<body>
+
+  <div class="container">
+    <div class="sub_container">
+
+      <div class="left">
+        <h1 class="learn">Learn to code by watching others</h1>
+        <p class="see">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. </p>
+      </div>
+
+
+      <div class="right">
+        <button class="free-btn" type="submit"><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
+        <!-- Container Form -->
+        <div class="form__container">
+
+        <!-- Form -->
+          <form id="form" class="form" action="" method="POST" autocomplete="off">
+
+            <!-- Grupo: First Name -->
+            <div class="group__item" id="group__first-name">
+              <div class="group__item-input">
+                <input type="text" name="first-name" placeholder="First Name" >
+                <i class="fas fa-times-circle"></i>
+              </div>
+              <p class="paraf__error">First Name cannot be empty</p>
+            </div>
+
+             <!-- Grupo: Last Name -->
+            <div class="group__item" id="group__last-name">
+              <div class="group__item-input">
+                <input type="text" name="last-name"  placeholder="Last Name" >
+                <i class="fas fa-times-circle"></i>
+              </div>
+              <p class="paraf__error">Last Name cannot be empty</p>
+            </div>
+
+            <!-- Grupo: Email -->
+            <div class="group__item" id="group__email">
+              <div class="group__item-input ">
+                <input type="email" name="email"placeholder="email@email.com" >
+                <i class="fas fa-times-circle"></i>
+              </div>
+              <p class="paraf__error ">Email cannot be empty</p>
+            </div>
+
+            <!-- Grupo: Password -->
+            <div class="group__item" id="group__password">
+              <div class="group__item-input">
+                <input type="password" name="password"placeholder="Password" >
+                <i class="fas fa-times-circle"></i>
+              </div>
+              <p class="paraf__error">Password cannot be empty</p>
+            </div>
+            <!-- Grupo: boton trial -->
+           <button type="submit" class=" btn-trial ">CLAIM YOUR FREE TRIAL</button>
+
+           <!-- Grupo: Terms & conditions -->
+           <p class="paraf-terms">By clicking the button, you are agreeing to our <a class="terms-anchor" href="#">Terms and Services</a></p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+ 
+  
+
+
+
+
+
+  <script src="main.js"></script>
+  <script src="https://kit.fontawesome.com/259345c38e.js" crossorigin="anonymous"></script>
+</body>
+
+
+</html>

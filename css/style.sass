@@ -1,0 +1,201 @@
+$c-red: hsl(0, 100%, 74%)
+$c-green: hsl(154, 59%, 51%)
+$c-blue: hsl(248, 32%, 49%)
+$c-darkBlue: hsl(249, 10%, 26%)
+$c-grayBlue: hsl(246, 25%, 77%)
+
+$fs16: 16px
+$ffPoppins: 'Poppins', sans-serif
+
+*
+      box-sizing: border-box
+      padding: 0
+      margin: 0
+
+body
+      font-size: $fs16
+      font-family: $ffPoppins
+
+.container
+      width: 100vw
+      height: 100vh
+      background: url('../images/bg-intro-desktop.png')
+      background-position: center
+      background-attachment: fixed
+      background-repeat: repeat
+      background-size: contain
+      background-color: hsl(0, 100%, 74%)
+      
+
+.sub_container
+      // border: 1px solid black
+      width: 90%
+      height: 100%
+      margin: auto
+      display: flex
+      justify-content: space-around
+
+.left
+      width: 45%
+      height: 100%
+      // border: 1px solid black
+      display: flex
+      flex-direction: column
+      justify-content: center
+      .learn
+            font-size: 3rem
+            color: #fff
+            margin-bottom: 30px
+            line-height: 1.2
+            width: 95%
+      .see
+            color: #fff
+// RIGHT
+.right
+      width: 45%
+      height: 100%
+      // border: 1px solid black
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: 
+      
+.free-btn
+      width: 90%
+      height: 10%
+      border: none
+      background-color: $c-blue
+      border-radius: 10px
+      margin-bottom: 20px
+      color: #fff 
+      font-size: 1rem
+      box-shadow: 0px 8px 1px  rgba(0, 0, 0, 0.2)
+      cursor: pointer
+      outline: none
+      &:hover
+            background-color:  hsl(248, 59%, 50%)    
+                  
+.btn-trial
+      width: 90%
+      height: 50px
+      border: none
+      background-color: $c-green
+      color: #fff
+      border-radius: 8px
+      font-size: 1rem
+      box-shadow: 0px 5px 1px  rgba(0, 0, 0, 0.2)
+      cursor: pointer
+      margin: auto
+      margin-top: 10px
+      margin-bottom: 10px
+      outline: none
+      &:hover
+            background-color: hsl(141, 76%, 44%)
+
+
+// Form container
+
+.form__container
+      background-color: #fff
+      width: 90%
+      height: 500px
+      border-radius: 10px
+      box-shadow: 0px 8px 2px  rgba(0, 0, 0, 0.2)
+      display: flex
+      flex-direction: column
+      align-items: center
+      // justify-content: space-around
+      padding: 20px 0 20px 0
+
+.form
+      width: 90%
+      height: 100%
+      display: grid
+      grid-template-columns: 1fr
+      grid-template-rows: repeat(6, 1fr)
+
+
+
+//  Inputs
+input
+      width: 100%
+      height: 45px
+      border-radius: 5px
+      border: none
+      outline: none
+      padding-left: 10px
+      color:  $c-darkBlue
+      font-size: 1rem
+      font-family: $ffPoppins
+      &::placeholder
+            font-size: 0.8rem
+            color: $c-grayBlue
+
+
+// Grupos
+.group__item
+      // border: 1px solid black
+      display: flex
+      flex-direction: column
+      margin-top: 10px
+      margin-bottom: 10px
+
+// inputs + Icono
+.group__item-input
+      // border: 1px solid green
+      position: relative
+      border: 2px solid $c-grayBlue
+      border-radius: 6px
+      display: flex
+
+// Icono
+i.fa-times-circle
+      display: none
+      font-size: 20px
+      color: $c-red
+      position: absolute
+      right: 10px
+      top: 12.5px
+
+i.fa-times-circle--active
+      display: block 
+
+
+i.fa-check-circle
+      color: $c-green
+      font-size: 20px
+      position: absolute
+      right: 10px
+      top: 12.5px
+
+
+// Paragraph Error
+.paraf__error
+      display: none
+      font-size: 0.7rem
+      color: $c-red
+      align-self: flex-end
+      margin-top: 5px
+
+// Terms & conditions
+.paraf-terms
+      font-size: 0.7rem
+      text-align: center
+      color: $c-grayBlue
+      .terms-anchor
+            color: $c-red
+            text-decoration: none
+            font-weight: 700
+
+
+//  ACTIVE
+.paraf__error--active
+      display: block
+
+.input--error .group__item-input
+      border-color: $c-red
+
+.input--success .group__item-input
+      border-color: $c-green
+
+
